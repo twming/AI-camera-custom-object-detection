@@ -29,6 +29,6 @@ AI Camera and Custom Object Detection Models
 - Node JS Web Application
 - Raspberry Pi Implementation
 
-<a href="https://youtu.be/7L3BNxNYwvY" target="_blank"><img src="Miscellaneous/video_cover.png" alt="IMAGE ALT TEXT HERE" width="960" height="720" border="10" /></a>
+<a href="https://youtu.be/7L3BNxNYwvY" target="_blank"><img src="Miscellaneous/video_cover.png" alt="IMAGE ALT TEXT HERE" width="960" height="520" border="10" /></a>
 
 ---
