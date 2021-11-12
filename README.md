@@ -19,7 +19,6 @@ This project study YOLO, SDD and R-CNN object detection models for person social
 | YANG YANG     | A0229971R | E0687379@u.nus.edu |
 | TAN WOEI MING | A0229974L | E0687382@u.nus.edu |
 | JIANG AI GUO  | A0180524L | E0284010@u.nus.edu |
-| ANG JENN NING | A0229970U | E0687378@u.nus.edu |
 
 ---
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
