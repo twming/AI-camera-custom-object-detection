@@ -1,0 +1,20 @@
+{
+  "name": "iss-social-distance-prediction-portal",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YYSunshine0912/iss-social-distance-prediction-portal"
+  },
+  "author": "Yang Yang", 
+  "homepage": "https://github.com/YYSunshine0912/iss-social-distance-prediction-portal",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "description": "Use Tensorflow.js to detect social distance via different pretrained models"
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TensorFlow.js:Social Distance Prediction</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Social Distance Prediction">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<style>
+			body {
+				min-height: 75rem;
+				padding-top: 4.5rem;
+			}
+
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}	
+
+
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand h1" href="/index.html" >Social Distance Prediction</a>		
+		</nav>
+		
+		<main role="main" class="container mt-5">
+			
+			<div class="row">
+				<div class="col-6">
+					<input id="image-selector" class="form-control border-0" type="file">
+				</div>				
+				<div class="col-6 ">	
+					<div class="d-flex justify-content-end">
+				    <label for="distance-threshold-selector">Distance Threshold:&nbsp;&nbsp;&nbsp;</label>
+					
+					<select id="distance-threshold-selector"  style="width:140px;">					  
+					   <option>0.15</option>
+					   <option selected>0.20</option>
+					   <option>0.30</option>
+					</select>
+					</div>
+				
+
+				</div>
+
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-12">
+					<h2 class="ml-3">Image</h2>
+					<div id="imageOverlay" class="imageOverlay">
+						<img id="selectedImage" class="ml-3" alt="">						
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="mt-3 row">
+				<div class="col-6">
+				   <h2 class="ml-3">SSD MobileNet v2 320x320</h2>
+				</div>
+				<div class="col-6">
+					<button id="ssd_predict-button" class="btn btn-primary float-right">Predict Distance (SSD)</button>
+				</div>
+			</div>
+			<div>
+			<div class="col-12">
+					<div id="ssd_progress_bar" class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">Loading MobileNet Model</div>
+				</div>
+			</div>
+			<div id="ssd_inferrence_content">
+			<div class="mt-1 ml-3 row">
+			<div class="col-4"><label><strong>Inferred Image:</strong>&nbsp;&nbsp;&nbsp;</label><label id="ssd_image_name"></label> </div>
+			<div class="col-4"><label><strong>Inferred Time:</strong>&nbsp;&nbsp;&nbsp;</label><label id="ssd_infer_time"></label> </div>
+			<div class="col-4"><label><strong>Selected Distance Threshold:</strong>&nbsp;&nbsp;&nbsp;</label><label id="ssd_distance_threshold">20 seconds</label> </div>
+			</div>
+			<div class="ml-3 row">
+			  <div class="col-6"><label><strong>Number of Person Detected:</strong>&nbsp;&nbsp;&nbsp;</label><label id="ssd_number_person"></label> </div>
+			<div class="col-6"><label><strong>Centroids:</strong>&nbsp;&nbsp;&nbsp;</label><label id="ssd_centroids"></label> </div>
+			</div>
+			<div class="ml-3 row">
+			  <div class="col-12"><label><strong>Inferred Result:</strong>&nbsp;&nbsp;&nbsp;</label><label id="ssd_infer_result"></label></div>
+			</div>
+			<div class="ml-3 row">			    
+			    <table class="ml-3 mr-3 table table-bordered table-striped">
+                <thead>
+                  <tr>
+				    <th>S/N</th>
+                    <th>Person Pair</th>
+                    <th>Centroid 1</th>
+                    <th>Centroid 2</th>
+					<th>Predicted Distance</th>
+                  </tr>
+                </thead>
+               <tbody id="ssd_table">
+			   </tbody>
+                </table>				
+			</div>
+			</div>
+			<hr>
+			<div class="mt-3 row">
+				<div class="col-6">
+				   <h2 class="ml-3">CenterNet MobileNet V2 FPN 512x512</h2>
+				</div>
+				<div class="col-6">
+					<button id="centernet_predict-button" class="btn btn-primary float-right">Predict Distance (CenterNet)</button>
+				</div>
+			</div>
+			<div>
+			<div class="col-12">
+					<div id="centernet_progress_bar" class="progress progress-bar progress-bar-striped progress-bar-animated mb-2">Loading MobileNet Model</div>
+				</div>
+			</div>
+			<div id="centernet_inferrence_content">
+			<div class="mt-1 ml-3 row">
+			<div class="col-4"><label><strong>Inferred Image:</strong>&nbsp;&nbsp;&nbsp;</label><label id="centernet_image_name"></label> </div>
+			<div class="col-4"><label><strong>Inferred Time:</strong>&nbsp;&nbsp;&nbsp;</label><label id="centernet_infer_time"></label> </div>
+			<div class="col-4"><label><strong>Selected Distance Threshold:</strong>&nbsp;&nbsp;&nbsp;</label><label id="centernet_distance_threshold"></label> </div>
+			</div>
+			<div class="ml-3 row">
+			  <div class="col-6"><label><strong>Number of Person Detected:</strong>&nbsp;&nbsp;&nbsp;</label><label id="centernet_number_person"></label> </div>
+			<div class="col-6"><label><strong>Centroids:</strong>&nbsp;&nbsp;&nbsp;</label><label id="centernet_centroids"></label></div>
+			</div>
+			<div class="ml-3 row">
+			  <div class="col-12"><label><strong>Inferred Result:</strong>&nbsp;&nbsp;&nbsp;</label><label id="centernet_infer_result"></label></div>
+			</div>
+			<div class="ml-3 row">			    
+			    <table class="ml-3 mr-3 table table-bordered table-striped">
+                <thead>
+                  <tr>
+				    <th>S/N</th>
+                    <th>Person Pair</th>
+                    <th>Centroid 1</th>
+                    <th>Centroid 2</th>
+					<th>Predicted Distance</th>
+                  </tr>
+                </thead>
+               <tbody id="centernet_table">
+			   </tbody>
+                </table>
+				
+			</div>		
+			</div>
+			<hr>
+			<div class="mt-3 row">
+				<div class="col-6">
+				   <h2 class="ml-3">Model Comparision</h2>
+				</div>
+				<div class="col-6">
+					<button id="btn_chart_compare" class="btn btn-primary float-right">Compare</button>
+				</div>
+			</div>
+			<div>	
+					
+			<div class="mt-5 row">
+				<div class="col-12" >
+					<div id="centroid-chart"> </div>
+				</div>
+				
+			</div>
+			<div class="mt-5 row">
+				<div class="col-12" >
+					<div id="time-chart"> </div>
+				</div>
+				
+			</div>
+						
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@latest"></script>
+		<script src="target_classes.js"></script>
+		<script src="predict.js"></script > 
+	</body>
+</html>
