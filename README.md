@@ -1,0 +1,94 @@
+## SECTION 1 : PROJECT TITLE
+## AI Camera and Custom Object Detection Models
+<img src="Miscellaneous/coverpage.jpg"
+     style="float: left; margin-right: 0px;" />
+
+---
+
+## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
+
+This project study YOLO, SDD and R-CNN object detection models for person social distance. The model is compared in Node JS web and implemented in Raspberry Pi.
+
+--
+
+## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
+
+| Name  | Student ID  | Work Items | Email |
+| :------------ |:---------------:| :-----| :-----|
+| LI XIAO XIA   | A0229975J | E0687383@u.nus.edu |
+| YANG YANG     | A0229971R | E0687379@u.nus.edu |
+| TAN WOEI MING | A0229974L | E0687382@u.nus.edu |
+| JIANG AI GUO  | A0180524L | E0284010@u.nus.edu |
+| ANG JENN NING | A0229970U | E0687378@u.nus.edu |
+
+---
+## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
+
+MyCroft in Picroft & Selene Server
+- Voice Assisted
+- API call integration
+- Private and Scalable Selene Server
+<a href="https://youtu.be/F_joH_HtBuY" target="_blank"><img src="https://img.youtube.com/vi/F_joH_HtBuY/0.jpg" alt="IMAGE ALT TEXT HERE" width="960" height="720" border="10" /></a>
+
+<a href="https://youtu.be/k9R6KZfFZKs" target="_blank"><img src="https://img.youtube.com/vi/k9R6KZfFZKs/0.jpg" alt="IMAGE ALT TEXT HERE" width="960" height="720" border="10" /></a>
+
+---
+
+## SECTION 5 : USER GUIDE
+
+References to setup MyCroft Account, Raspberry Pi and Selene Server
+
+| Items  | [Reference](https://github.com/twming/IRS-PM-2021-01-16-IS03PT-GRP-ISSCroft-MyCroftDiscoveryAndApplication/tree/master/ProjectReport/MDAA_Installation_User_Guide.docx)  | 
+| :------------ |:---------------:|
+| MyCroft Account, Pair Device | User Guide 2.1 |
+| Raspberry Pi Setup | User Guide 3.2 |
+| Selene Personal Server Setup | User Guide 3.3 |
+| Delivery  Use Case Code Setup | User Guide 4.1, 4.2 |
+
+Refer to [MDAA_Installation_User_Guide](https://github.com/twming/IRS-PM-2021-01-16-IS03PT-GRP-ISSCroft-MyCroftDiscoveryAndApplication/tree/master/ProjectReport/MDAA_Installation_User_Guide.docx) file in ProjectReport folder. 
+
+---
+## SECTION 6 : PROJECT REPORT 
+
+1. Project Overview
+2. Business Perspective
+3. Market Research
+4. Project Objectives
+5. System Specification
+- Mycroft Architecture
+- Mycroft Data Privacy Handling
+- Mycroft Home-UI Setting
+- Mycroft Linux Installation and Application
+- Picroft Installation and Application
+- Mycroft Personal Selene Server setup
+- Mycroft Skill Management
+- Use Cases Specification
+6. System Implementation
+- Mycroft Home Setup
+- Mycroft Linux Installation and Configuration
+- Mycroft Picroft Config
+- Private Skill Create and Run
+- Public Skill Create and Run
+- Mycroft Personal Server setup
+- Use Cases Implementation
+7.  Project Conclusions
+8. Appendix
+- Project Proposal
+- Mapped System Functionalities against MR, RS, CGS
+- Installation and User Guide
+- References
+
+---
+## SECTION 7 : MISCELLANEOUS
+
+ISSCroft Demo:
+
+<a href="https://youtu.be/Xd8jZ0yc6Po" target="_blank"><img src="http://img.youtube.com/vi/Xd8jZ0yc6Po/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a><a href="https://www.youtube.com/watch?v=WvILHueP06U" target="_blank"><img src="http://img.youtube.com/vi/WvILHueP06U/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a><a href="https://www.youtube.com/watch?v=Ntgi5n6cIbU" target="_blank"><img src="http://img.youtube.com/vi/Ntgi5n6cIbU/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+Skill and Github Repository:
+
+- Parcel Delivery Route Optimizer
+https://github.com/jiangag/vrp.git
+
