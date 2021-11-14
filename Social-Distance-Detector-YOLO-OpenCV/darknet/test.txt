@@ -1,0 +1,42 @@
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000030619.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000024436 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000008589.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000000542.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000017954.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000000488.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000017967.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000011461.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000010710.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000022683 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000015117.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000030387.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000024808.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000009420.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000010705.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000015097.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000027519.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000010040.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000019324 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000020611 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000032074.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000019904 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000009929.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000019450 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000030838.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000003077.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000026488.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000020651 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000029138.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000013670.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000020184 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000024030 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000010727.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000032124.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000004736.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000004554.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000007873.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000008571.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000007228.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000022863 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000023280 - Copy - Copy.jpg
+/home/sandy/darknet/Yolo-Annotation-Tool-New-/Images1/000000012810.jpg
