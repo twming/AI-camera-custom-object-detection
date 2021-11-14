@@ -22,7 +22,7 @@ This project study YOLO, SSD and R-CNN object detection models for person social
 
 
 ---
-## SECTION 3 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
+## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
 AI Camera and Custom Object Detection Models
 - Social Distance Persons Detection
